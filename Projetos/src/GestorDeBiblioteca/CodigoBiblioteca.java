@@ -65,12 +65,24 @@ public class CodigoBiblioteca {
     }
 
     public static void ListarLivro(ArrayList<Livros> livros){
-        for(int i = 0; i < livros.size(); i++){
-            livros.toString();
+        
+        for(Livros livro : livros){
+            System.out.println(livros.toString());
         }
     }
 
     public static boolean isStringOnly(String str){
         return str.matches("^[\\p{L}0-9 .,:;!?@$%&=£§€ºª+()'\"\\-]+$");
+    }
+
+    public static void Atualizar_Estado(Scanner sc, ArrayList<Livros> livros){
+        String titulo;
+        
+        System.out.println("Indique o Título do livro a qual quer alterar o estado: ");
+        titulo = sc.nextLine();
+
+        for(Livros livro : livros){
+            
+        }
     }
 }

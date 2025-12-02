@@ -102,5 +102,15 @@ public class InserirAparelho {
         //Chamar métodos da interface2
         t1.agendarAtualizacao();
         t1.iniciarDiagnostico();
+
+        //Constantes Herdadas Interface1
+        System.out.println("Dias de Devolução: " + Interface1.Dias_Devolucao);
+        System.out.println("Dias de Garantia: " + Interface1.Max_dias_Garantia);
+
+        //Constantes Herdades Interface3
+        System.out.println("Taxa de Contraste padrão: " + Interface3.Taxa_Contraste);
+
+        //COnstante redifinida na classe Computador
+        System.out.println("Taxa de Contraste redifinida: " + Computador.Taxa_de_Contraste);
     }
 }
